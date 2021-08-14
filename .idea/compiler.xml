@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <option name="micronaut.processing.annotations" value="br.com.zupacademy.ratkovski.*" />
+        <option name="micronaut.processing.group" value="br.com.zupacademy.ratkovski" />
+        <option name="micronaut.processing.incremental" value="true" />
+        <option name="micronaut.processing.module" value="Key-manager" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut.data/micronaut-data-processor/2.4.7/1ca51613b547115fd6350c43f3ebe34f9d58d03/micronaut-data-processor-2.4.7.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut.data/micronaut-data-model/2.4.7/2f85cdee74e64f1f4bfcc875270b63b98369e394/micronaut-data-model-2.4.7.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut.data/micronaut-data-tx/2.4.7/1a59f7a77b6b647a6d4acf2da59013e2344399bd/micronaut-data-tx-2.4.7.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-inject-java/2.5.8/b7a04628a4636feafdc3e2db883eafa8bbd067f0/micronaut-inject-java-2.5.8.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-validation/2.5.8/9c335ece6bc5d9888fcf88fda6ada5daf7990a4b/micronaut-validation-2.5.8.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-aop/2.5.8/f429a642c95caf984a6f8b22c0c97580ed91e543/micronaut-aop-2.5.8.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-core-reactive/2.5.8/57f27e2a56f01cd8f0bc7efdde00ec54f7d7ad6e/micronaut-core-reactive-2.5.8.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-core/2.5.8/5ec0b720dc3b2a38874f82119c78ee103c24a938/micronaut-core-2.5.8.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.micronaut/micronaut-inject/2.5.8/8e96967aae5099f1a3c19b8ae2bac15cdbba7b78/micronaut-inject-2.5.8.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.3.2/934c04d3cfef185a8008e7bf34331b79730a9d43/javax.annotation-api-1.3.2.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.spotbugs/spotbugs-annotations/4.0.3/755cc5d84d32b31beeaf8597181f0fc4eac98e16/spotbugs-annotations-4.0.3.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.26/a78a8747147d2c5807683e76ec2b633e95c14fe9/snakeyaml-1.26.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.26/77100a62c2e6f04b53977b9f541044d7d722693d/slf4j-api-1.7.26.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.20/e39a5e902e3eab9a04d82bb2d289ac3d574ec34c/rxjava-2.2.20.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.3/d9fb7a7926ffa635b3dcaa5049fb2bfa25b3e7d0/reactive-streams-1.0.3.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/2.0.1.Final/cb855558e6271b1b32e716d24cb85c7f583ce09e/validation-api-2.0.1.Final.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.transaction/jakarta.transaction-api/1.3.3/c4179d48720a1e87202115fbed6089bdc4195405/jakarta.transaction-api-1.3.3.jar" />
+        </processorPath>
+        <module name="Key-manager.test" />
+        <module name="Key-manager.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11" />
+  </component>
+</project>
