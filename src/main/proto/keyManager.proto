@@ -1,0 +1,128 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "br.com.zupacademy.ratkovski";
+//option java_outer_classname = "KeyManager";
+//option objc_class_prefix = "HLW";
+
+package br.com.zupacademy.ratkovski;
+
+import "google/protobuf/timestamp.proto";
+
+service PixKeyManagerService {
+  rpc registra(RegisterKeyPixRequest) returns (RegisterKeyPixResponse) {}
+}
+service RemovePixKeyManagerService {
+  rpc remove(RemoveKeyPixRequest)returns(RemoveKeyPixResponse) {}
+
+}
+service DetailsPixKeyManagerService {
+  rpc carrega(DetailsKeyPixRequest)returns(DetailsKeyPixResponse) {}
+}
+service ListaPixKeyManagerService {
+  rpc lista(ListaKeyPixRequest)returns(ListaKeyPixResponse) {}
+}
+
+
+
+enum KeyType{
+  UNKNOWN_KEY=0;
+  CPF =1;
+  PHONE=2;
+  EMAIL=3;
+  RANDOM=4;
+}
+
+enum AccountType{
+  UNKNOWN_ACCOUNT=0;
+  CONTA_CORRENTE=1;
+  CONTA_POUPANCA=2;
+}
+
+/**
+*Registra a chave pix
+*/
+message RegisterKeyPixRequest{
+  string clienteId = 1;
+  KeyType tipoChave=2;
+  string chave=3;
+  AccountType tipoConta=4;
+
+}
+
+message RegisterKeyPixResponse {
+  string clienteId = 1;
+  string pixId =2;
+}
+
+/**
+*Remove a chave pix
+*/
+message RemoveKeyPixRequest{
+  string clienteId = 1;
+  string pixId =2;
+
+}
+
+message RemoveKeyPixResponse {
+  string clienteId = 1;
+  string pixId =2;
+}
+
+/**
+*Carrega a chave pix
+*/
+message DetailsKeyPixRequest{
+  message FiltroPorPixId{
+    string clienteId=1;
+    string pixId=2;
+  }
+  oneof filtro{
+    FiltroPorPixId pixId = 1;
+    string chave=2;
+
+  }
+
+}
+message DetailsKeyPixResponse{
+  message ChavePix{
+    message ContaInfo{
+      AccountType tipo = 1;
+      string instituicao =2;
+      string nomeDoTitular =3;
+      string cpfDoTitular =4;
+      string agencia =5;
+      string numeroDaConta =6;
+    }
+    KeyType tipo =1;
+    string chave =2;
+    ContaInfo conta = 3;
+    google.protobuf.Timestamp criadaEm =4;
+  }
+  string clienteId=1;
+  string pixId =2;
+  ChavePix chave = 3;
+
+
+}
+
+/**
+*Lista a chave pix
+*/
+
+message ListaKeyPixRequest{
+  string clienteId=1;
+
+}
+message ListaKeyPixResponse{
+  message ChavePix{
+    string pixId=1;
+    KeyType tipo=2;
+    string chave=3;
+    AccountType tipoDeConta=4;
+    google.protobuf.Timestamp criadaEm=5;
+  }
+  string clienteId=1;
+  repeated ChavePix chaves=2;
+}
+
